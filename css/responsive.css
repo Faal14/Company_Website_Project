@@ -1,0 +1,163 @@
+/* =====================================
+   TABLET (1024px)
+===================================== */
+
+@media (max-width:1024px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+        text-align:center;
+        padding-top:140px;
+
+    }
+
+    .hero-button{
+
+        justify-content:center;
+
+    }
+
+    .hero h1{
+
+        font-size:58px;
+
+    }
+
+    .hero-right{
+
+        margin-top:60px;
+
+    }
+
+    .service-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .portfolio-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .about{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+    .about-right{
+
+        margin-top:40px;
+
+    }
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+}
+
+/* =====================================
+   MOBILE (768px)
+===================================== */
+
+@media (max-width:768px){
+
+    section{
+
+        padding:80px 6%;
+
+    }
+
+    .navbar{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .nav-menu{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .hero-button{
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-right{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .testimonial-card{
+
+        padding:35px;
+
+    }
+
+    .testimonial-card p{
+
+        font-size:18px;
+
+    }
+
+    .cta{
+
+        margin:40px 0;
+        border-radius:20px;
+
+    }
+
+    .cta h2{
+
+        font-size:36px;
+
+    }
+
+}
