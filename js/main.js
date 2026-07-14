@@ -1,12 +1,10 @@
-// ================================
-// Navbar Scroll Effect
-// ================================
+// Navbar berubah saat discroll
 
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 50){
+    if(window.scrollY > 80){
 
         navbar.classList.add("scrolled");
 
@@ -19,36 +17,12 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================================
-// Smooth Scroll
-// ================================
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+// Scroll Animation
 
-    anchor.addEventListener("click",function(e){
-
-        e.preventDefault();
-
-        const target=document.querySelector(this.getAttribute("href"));
-
-        if(target){
-
-            target.scrollIntoView({
-
-                behavior:"smooth"
-
-            });
-
-        }
-
-    });
-
-});
-
-
-// ================================
-// Fade Animation
-// ================================
+const hiddenElements = document.querySelectorAll(
+    ".service-card, .project, .number, .testimonial-card"
+);
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -64,8 +38,7 @@ const observer = new IntersectionObserver((entries)=>{
 
 });
 
-document.querySelectorAll(".service-card,.project,.number,.testimonial-card,.hero-card")
-.forEach(el=>{
+hiddenElements.forEach((el)=>{
 
     el.classList.add("hidden");
 
